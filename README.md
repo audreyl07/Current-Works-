@@ -18,6 +18,21 @@ This project works as a way to summarize textbook chapters into short, concise s
 
 ```bash
 pip install langchain langchain-community langchain-core langchain-ollama langchain-huggingface sentence-transformers fpdf pdfplumber torch
+```
+
+### How it Works 
+1. extracts the PDF into text
+2. splits the text into chunks
+3. clusters similar chunks using the k-means clustering algorithm
+4. summarizes using LLM
+5. exports summary into a PDF
+6. allows appending new summaries into the previous PDF
+
+### How to Use 
+1. given a pdf or you can use your own (make sure to change code if you do), run the program first
+2. you will then be prompted to provide the path to a second PDF
+3. this will take the previous summary pdf and append the new second summary to it
+   
 
 
 
