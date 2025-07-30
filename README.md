@@ -11,3 +11,13 @@ This project works as a way to summarize textbook chapters into short, concise s
 - Can combine the old pdf reports with new summaries
 
 ### Installation 
+#### Requirements 
+- Python 3.8+
+- install the dependencies via pip
+- have Ollama installed locally 
+
+```bash
+pip install langchain langchain-community langchain-core langchain-ollama langchain-huggingface sentence-transformers fpdf pdfplumber torch
+
+
+
